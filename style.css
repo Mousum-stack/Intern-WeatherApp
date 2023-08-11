@@ -5,14 +5,30 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
 }
-.container{
+h5 {
+    margin-top: 10px;          /* Providing some space at the top */
+    color: aliceblue;          /* Setting the text color */
+    font-size: 24px;           /* Increasing the font size for better visibility */
+    font-weight: bold;         /* Making the text bold */
+    text-align: center;        /* Center-aligning the text */
+    padding: 15px 0;           /* Giving some vertical padding for visual separation */
+    background-color: transparent;    /* Dark background color for contrast */
+    border-radius: 20px;    
+    margin-bottom: 50px;   /* Rounded edges for aesthetics */
+    margin-top: -60px;
+}
+
+.container {
     width: 100%;
     height: 100vh;
     background-color: black;
     display: flex;
+    flex-direction: column;  /* Stack children vertically */
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Align items to the start */
+    position: absolute;     /* As you're using a ::before pseudo-element */
 }
+
 .container::before{
     content: "";
     width: 100%;
