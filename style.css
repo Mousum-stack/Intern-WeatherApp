@@ -31,6 +31,9 @@
     align-items: center;
     
 }
+.weather div{
+    margin: 0.6rem;
+}
 .weather1{
     font-size: 4rem;
 }
@@ -42,6 +45,9 @@
 }
 .weather3 span{
     margin: 0.3%;
+}
+.weather3 img{
+    width: 2rem;
 }
 nav{
     height: 100px;
