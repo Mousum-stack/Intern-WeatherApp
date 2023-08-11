@@ -70,3 +70,14 @@ function getDayname (num){
                 break;
     }
 }
+
+const searchF = (e) => {
+    e.preventDefault();
+    
+    if (search.value.trim() !== "") {  // ensure search value isn't empty
+        target = search.value;
+        fetchData();
+    }
+}
+
+form.addEventListener("submit", searchF);
